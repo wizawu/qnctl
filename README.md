@@ -18,7 +18,7 @@ cp qnctl /usr/bin/      # optional
 
 ### Usage
 
-#### Set Up Qiniu Keys
+#### Set up Qiniu keys
 
 There are two ways to do that. Export `QINIU_AK`, `QINIU_SK` and `QINIU_BUCKET`
 
@@ -51,8 +51,8 @@ $ qnctl add images/ path/to/001.png         # same as previous
 # Save to another key
 $ qnctl add images/002.png path/to/001.png
 
-# Add multiple
-$ qnctl add images/ path/to/*.png
+# Add multiple; MUST use single quotes
+$ qnctl add images/ 'path/to/*.png'
 
 # DON'T DO
 $ qnctl add images path/to/001.png
@@ -89,7 +89,7 @@ $ qnctl stat images/001.png
      Size: 326842
 Mime Type: image/png
  Put Time: 2016-01-27 03:06:16 +0800 CST
- End User: 
+ End User:
 ```
 
 ### sync
@@ -97,5 +97,5 @@ Mime Type: image/png
 Refresh CDN cache.
 
 ```
-$ qnctl sync http://your-domain.qiniudns.com/key1 http://your-domain.qiniudns.com/key2
+$ qnctl sync http://your-cdn.com/key1 http://your-cdn.com/key2
 ```
