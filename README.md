@@ -1,6 +1,6 @@
 # qnctl ![build status](https://travis-ci.org/wizawu/qnctl.svg)
 
-Built on the official library `qiniupkg.com/api.v7/kodo`, lightweight and friendly.
+Unix-style command-line tool for Qiniu CDN, built on the official library `qiniupkg.com/api.v7/kodo`.
 
 Supported operations:
 + add
